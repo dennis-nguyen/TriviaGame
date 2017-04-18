@@ -6,7 +6,6 @@ var timer = 20;
 var totalTimer = timer;
 var qTimer;
 
-
 var questions = [
 
     {
@@ -102,7 +101,6 @@ var questions = [
         picture: "thaitomyum.jpg"
     }
 
-
 ];
 
 $(document).ready(function() {
@@ -121,8 +119,6 @@ $(document).ready(function() {
         $("#choice3").html(questions[qCounter].choice3);
         $('#picture').css({ "background-image": "url(assets/images/" + questions[qCounter].picture + ")", "background-position": "cover" });
     }
-
-
     //Fisher-Yates Shuffle
     function randomizeQuestions(array) {
         var currentIndex = array.length,
@@ -164,7 +160,6 @@ $(document).ready(function() {
         $("#result").html("Out of time! The answer was: <div id='showAnswer'></div>");
         $("#result").append("<br> <img src='assets/images/chandler.gif'>");
         transition();
-
     }
     //Hides picture and choices to show the transition screen
     function transition() {
@@ -208,7 +203,7 @@ $(document).ready(function() {
         var timeleft = (timer * (100 / totalTimer)) + "%";
         progressTimer(timeleft);
         timer--;
-        if (timer == 0) {
+        if (timer < 0) {
             unanswered();
         }
     }
@@ -277,5 +272,4 @@ $(document).ready(function() {
     }
 
     start();
-
 });

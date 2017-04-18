@@ -28,7 +28,7 @@ html {
 
 body {
     min-height: 100%;
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .progress {
@@ -56,9 +56,13 @@ h1 {
 }
 
 #result {
-	font-size: 60px;
+    font-size: 60px;
 }
 
-.btn:focus {
-  background-color: red;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background: #0097EC;
 }
