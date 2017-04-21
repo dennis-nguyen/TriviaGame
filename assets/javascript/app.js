@@ -59,7 +59,7 @@ $(document).ready(function() {
         $("#choice2").html(triviaQ.results[qCounter].incorrect_answers[1]);
         $("#choice3").html(triviaQ.results[qCounter].incorrect_answers[2]);
         $('#picture').css({
-            "background-image": "url(" + images.data[0].images.downsized.url + ")",
+            "background-image": "url(" + images.data[2].images.downsized.url + ")",
             "background-position": "cover"
         });
     }
