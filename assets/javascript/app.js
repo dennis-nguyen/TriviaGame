@@ -33,7 +33,7 @@ $(document).ready(function() {
     function getImage() {
         var currentQ = triviaQ.results[qCounter].correct_answer.replace(/\W+/g, " ").split(" ").join("+");
         $.ajax({
-            url: "http://api.giphy.com/v1/gifs/search?q=" + currentQ + "&rating=pg&api_key=dc6zaTOxFJmzC",
+            url: "https://api.giphy.com/v1/gifs/search?q=" + currentQ + "&rating=pg&api_key=dc6zaTOxFJmzC",
             method: "GET"
         }).done(function(response2) {
             images = response2;
