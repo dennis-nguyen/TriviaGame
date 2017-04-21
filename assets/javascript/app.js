@@ -169,7 +169,7 @@ $(document).ready(function() {
 
     function resetTimer() {
         timer = 20;
-        qTimer = setInterval(questionCountDown, 3000);
+        qTimer = setInterval(questionCountDown, 1000);
     }
 
     function resetGame() {
